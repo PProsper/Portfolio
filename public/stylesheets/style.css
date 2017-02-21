@@ -1,2 +1,14 @@
+html {
+  height: 100%;
+  width: 100%; }
+
+nav {
+  background-color: #D6EAF8;
+  color: #641E16; }
+
+.ancors, a {
+  text-decoration-color: #1B4F72;
+  margin-left: 20%;
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

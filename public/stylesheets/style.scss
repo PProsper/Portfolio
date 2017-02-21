@@ -1,5 +1,10 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
 $prime: #D6EAF8;
-$text1: black;
+$text1: #1B4F72;
 $text2: #641E16;
 
 @mixin color($bgc, $fgc){
@@ -7,15 +12,21 @@ $text2: #641E16;
   color: $fgc;
 }
 
+@mixin textcolor($tc){
+  text-decoration-color:$tc;
+}
+
 nav{
-@include color($prime, $text2)
+@include color($prime, $text2);
 }
 
 .ancors{
-  display: flex;
-  align-content: center;
+  @include textcolor($text1);
+  // display: flex;
+  // justify-content:center;
+  margin-left: 20%;
   font-size: 20px;
 }
 a{
-  @extend ancors;
+  @extend .ancors;
 }

@@ -3,7 +3,13 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('contact',
+  {title: 'Patrice Prosper',
+     pageId: 'Contact',
+  env:
+  JSON.stringify
+  (process.env.NODE_ENV)
+});
 });
 
 module.exports = router;
