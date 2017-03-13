@@ -1,11 +1,13 @@
-html{
-  height: 100%;
-  width: 100%;
-}
+// @import url(https://fonts.google.com/?selection.family=Baloo+Bhaina);
 
+//fonts
+// $baloo: 'Baloo Bhaina', cursive;
+
+//colors
 $prime: #D6EAF8;
 $text1: #1B4F72;
 $text2: #641E16;
+
 
 @mixin color($bgc, $fgc){
   background-color:$bgc;
@@ -14,6 +16,43 @@ $text2: #641E16;
 
 @mixin textcolor($tc){
   text-decoration-color:$tc;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  background-color: #EBF5FB;
+}
+
+
+/* Create a step size.*/
+/* This is the percentage each heading will be reduced by. */
+$step-size-heading: 0.33333;
+/* The mixin */
+@mixin heading-size($size) {
+    font-size: $size * $step-size-heading + em;
+}
+h1 {
+    @include heading-size(8);
+      text-align: center;
+}
+h2 {
+    @include heading-size(6);
+    font-weight:  bold;
+}
+h3 {
+    @include heading-size(4);
+      text-align: center;
+      // font-family: $baloo;
+}
+h4 {
+    @include heading-size(3);
+}
+h5 {
+    @include heading-size(2);
+}
+h6 {
+    @include heading-size(1);
 }
 
 nav{
@@ -29,4 +68,47 @@ nav{
 }
 a{
   @extend .ancors;
+}
+
+iframe{
+  height: 85%;
+  width: 100%;
+  position:relative;
+}
+.projects{
+      height: 50%;
+      width: 50%;
+      &:hover{
+        -webkit-box-shadow: 0px 0px 15px 5px #AED6F1;
+        -moz-box-shadow: 0px 0px 15px 5px #AED6F1;
+        box-shadow: 0px 0px 15px 5px #AED6F1;
+      }
+}
+
+.conatiner{
+  display: flex;
+  justify-content: space-between;
+}
+.child{
+  margin: 1% 5% 1% 5%;
+}
+
+#full{
+  @extend .conatiner ;
+  #final, #rails{
+    @extend .child;
+  }
+}
+
+#auths{
+  @extend .conatiner ;
+  #specific, #group{
+    @extend .child;
+  }
+}
+#games{
+  @extend .conatiner ;
+  #tictactoe, #mouse{
+    @extend .child;
+  }
 }

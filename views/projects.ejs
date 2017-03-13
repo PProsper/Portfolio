@@ -1,11 +1,44 @@
 <html>
 <% include partials/head.ejs %>
 <body>
-  <% include partials/header.ejs %>
   <h2> <%= pageId %> </h2>
-  <iframe src="" frameborder="0"></iframe>
-    <iframe src="" frameborder="0"></iframe>
-      <iframe src="" frameborder="0"></iframe>
-        <iframe src="" frameborder="0"></iframe>
+  <% include partials/header.ejs %>
+
+  <h2> Full Stacks: </h2>
+    <div id="full">
+      <div id="final" class="projects">
+        <h3> React/Express </h3>
+        <!-- <iframe id="final" src="https://trendspot.herokuapp.com/ " frameborder="0"></iframe> -->
+        <img src="" alt="">
+      </div>
+      <div id="rails" class="projects">
+        <h3> React/Rails </h3>
+        <img src="" alt="">
+      </div>
+    </div>
+
+    <h2> Authorized Login: </h2>
+    <div id="auths">
+      <div id="specific" class="projects">
+        <h3> Weather App </h3>
+        <iframe src="https://lit-wildwood-10617.herokuapp.com/auth/login" frameborder="0"></iframe>
+      </div>
+      <div id="group" class="projects">
+        <h3> CRUD Application - Group Project </h3>
+        <iframe src="https://afternoon-beyond-94015.herokuapp.com/" frameborder="0"></iframe>
+      </div>
+  </div>
+
+<h2> Interactive Games: </h2>
+  <div id="games">
+    <div id="tictactoe" class="projects">
+      <h3> Tic Tac Toe </h3>
+      <iframe src="http://recruiter-bear-36387.bitballoon.com" frameborder="0"></iframe>
+    </div>
+    <div id="mouse" class="projects">
+      <h3> Speedy Mouse </h3>
+      <iframe src="https://pprosper.github.io/CatMouseGame/" frameborder="0"></iframe>
+    </div>
+  </div>
 </body>
 </html>
