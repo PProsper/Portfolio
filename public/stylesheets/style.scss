@@ -38,7 +38,7 @@ h1 {
 }
 h2 {
     @include heading-size(6);
-    font-weight:  bold;
+    text-decoration: underline;
 }
 h3 {
     @include heading-size(4);
@@ -53,6 +53,11 @@ h5 {
 }
 h6 {
     @include heading-size(1);
+}
+
+p{
+  @include heading-size(7);
+  text-align: center;
 }
 
 nav{
