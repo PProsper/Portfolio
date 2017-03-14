@@ -24,7 +24,6 @@ html{
   background-color: #EBF5FB;
 }
 
-
 /* Create a step size.*/
 /* This is the percentage each heading will be reduced by. */
 $step-size-heading: 0.33333;
@@ -37,16 +36,19 @@ h1 {
       text-align: center;
 }
 h2 {
-    @include heading-size(6);
-    text-decoration: underline;
+    @include heading-size(7);
+    text-align: center;
 }
 h3 {
-    @include heading-size(4);
-      text-align: center;
+    @include heading-size(6);
+    text-decoration: underline;
+    margin-top: 5%;
+    text-align: center;
       // font-family: $baloo;
 }
 h4 {
-    @include heading-size(3);
+    @include heading-size(4);
+      text-align: center;
 }
 h5 {
     @include heading-size(2);
@@ -71,15 +73,16 @@ nav{
   margin-left: 20%;
   font-size: 20px;
 }
-a{
+nav a{
   @extend .ancors;
 }
 
-iframe{
+iframe, img{
   height: 85%;
   width: 100%;
   position:relative;
 }
+
 .projects{
       height: 50%;
       width: 50%;
@@ -95,7 +98,7 @@ iframe{
   justify-content: space-between;
 }
 .child{
-  margin: 1% 5% 1% 5%;
+  margin: 3% 5% 1% 5%;
 }
 
 #full{
@@ -117,3 +120,81 @@ iframe{
     @extend .child;
   }
 }
+
+#soc{
+  /*position: absolute;*/
+  width: 100%;
+  margin-top: 5%;
+  // border: 2px;
+  // border-style: dashed;
+  padding: 5px 5px 5px 5px;
+  #logos{
+    margin-left: 160;
+    height: 80px;
+    width: 80px;
+    padding: 4px;
+
+    a{
+      width: 80px;
+    }
+  }
+}
+input,textarea {
+padding: 12px;
+}
+
+label {
+
+}
+
+.inner-contact {
+width: 50%;
+padding: 20px;
+// border: 8px solid #ffffff;
+margin-top: 3%;
+margin-left: 25%;
+}
+
+button{
+height: 5%;
+width: 20%;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+margin-top: 2%;
+
+}
+label{
+  color: black;
+  font-size: 12pt;
+}
+.name {
+width: 200px;
+margin-bottom: 20px;
+transition: 0.5s;
+-moz-transition: 0.5s; /* Old Firefox */
+-webkit-transition: 0.5s; /* Safari & Chrome */
+-o-transition: 0.5s; /* Opera */
+
+  }
+
+.name:focus { width: 275px; }
+
+
+.email {
+width: 200px;
+margin-bottom: 20px;
+transition: 0.5s;
+-moz-transition: 0.5s; /* Old Firefox */
+-webkit-transition: 0.5s; /* Safari & Chrome */
+-o-transition: 0.5s; /* Opera */
+}
+.email:focus { width: 275px;}
+
+.message {
+height: 30%;
+width: 80%;
+margin-bottom: 20px;
+transition: 0.5s;
+-moz-transition: 0.5s; /* Old Firefox */
+-webkit-transition: 0.5s; /* Safari & Chrome */
+-o-transition: 0.5s; /* Opera */
+ }
