@@ -4,6 +4,8 @@
 // $baloo: 'Baloo Bhaina', cursive;
 
 //colors
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
 $prime: #D6EAF8;
 $text1: #1B4F72;
 $text2: #641E16;
@@ -32,7 +34,8 @@ $step-size-heading: 0.33333;
     font-size: $size * $step-size-heading + em;
 }
 h1 {
-    @include heading-size(8);
+    @include heading-size(18);
+    font-family: 'Great Vibes', cursive;
       text-align: center;
 }
 h2 {
