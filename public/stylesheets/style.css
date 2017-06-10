@@ -7,10 +7,17 @@ html {
 /* Create a step size.*/
 /* This is the percentage each heading will be reduced by. */
 /* The mixin */
-#loader {
-  margin-left: 15%;
-  height: 80%;
-  width: 75%; }
+#llp {
+  height: 35%;
+  width: 20%;
+  float: left;
+  margin-top: 10%;
+  margin-left: 10%; }
+
+#wel {
+  font-size: 14.99985em;
+  font-family: "Great Vibes", cursive;
+  margin-top: 5%; }
 
 h1 {
   font-size: 5.99994em;

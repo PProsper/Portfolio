@@ -36,13 +36,27 @@ $step-size-heading: 0.33333;
     font-size: $size * $step-size-heading + em;
 }
 
-#loader {
-  // @include heading-size(60);
-  // font-family: 'Great Vibes', cursive,;
+#llp{
+  height: 35%;
+  width: 20%;
+  float: left;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+#wel {
+  @include heading-size(45);
+  font-family: 'Great Vibes', cursive,;
+  margin-top: 5%;
+
+  // margin-left: 15%;
+  // height: 80%;
+  // width: 75%;
+
   // margin-top: 5%;
-  margin-left: 15%;
-  height: 80%;
-  width: 75%;
+  // margin-left: 32%;
+  // height: 50%;
+  // width: 35%;
 }
 
 h1 {
