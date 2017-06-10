@@ -40,13 +40,15 @@ $step-size-heading: 0.33333;
   height: 35%;
   width: 20%;
   float: left;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-top: 8%;
+  margin-left: 13%;
+  margin-right: 2%;
 }
 
 #wel {
-  @include heading-size(45);
+  @include heading-size(40);
   font-family: 'Great Vibes', cursive,;
+  text-align: left;
   margin-top: 5%;
 
   // margin-left: 15%;

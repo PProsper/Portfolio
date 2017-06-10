@@ -11,12 +11,14 @@ html {
   height: 35%;
   width: 20%;
   float: left;
-  margin-top: 10%;
-  margin-left: 10%; }
+  margin-top: 8%;
+  margin-left: 13%;
+  margin-right: 2%; }
 
 #wel {
-  font-size: 14.99985em;
+  font-size: 13.3332em;
   font-family: "Great Vibes", cursive;
+  text-align: left;
   margin-top: 5%; }
 
 h1 {
